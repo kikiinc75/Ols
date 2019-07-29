@@ -1,0 +1,93 @@
+#side-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(226, 139, 139);
+    color: #272626;
+    width: 350px;
+    z-index: 20;
+    overflow: auto;
+}
+.d-none {
+    display: none;
+}
+#side-bar .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 46px;
+    color: rgb(14, 8, 8);
+}
+.add-to-cart {
+    cursor: pointer;
+}
+#side-bar .clearBoth {
+    clear: both;
+}
+#side-bar .itemLeft {
+    float: left;
+    width: 20%;
+}
+#side-bar .itemRight {
+    float: left;
+    padding: 0 5px;
+    width: 75%;
+    font-size: 14px;
+}
+#side-bar .cartImage {
+    width: 50px;
+}
+#side-bar hr {
+    margin: 0;
+    padding: 0;
+}
+#side-bar .itemRow {
+    padding: 5px;
+}
+#side-bar .qty {
+    float: left;
+    padding: 5px;
+}
+#side-bar .remove {
+    float: right;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+}
+@media (max-width: 767px) {
+    #side-bar {
+        width: 275px;
+    }
+    #side-bar .close {
+        font-size: 23px;
+    }
+    #side-bar h3 {
+        font-size: 16px;
+    }
+    #side-bar .itemRight {
+        font-size: 14px;
+    }
+    #side-bar .remove {
+        font-size: 12px;
+    }
+}
+@media (max-width: 460px) {
+    #side-bar {
+        width: 175px;
+    }
+    #side-bar .close {
+        font-size: 23px;
+    }
+    #side-bar h3 {
+        font-size: 16px;
+    }
+    #side-bar .itemRight {
+        font-size: 14px;
+    }
+    #side-bar .remove {
+        font-size: 12px;
+    }
+}
