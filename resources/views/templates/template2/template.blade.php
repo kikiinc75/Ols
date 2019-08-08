@@ -82,11 +82,11 @@
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
                                 <li><a href="{{url('')}}" class="@yield('nav-home','')">Home</a></li>
-                                <!-- <li><a href="{{url('/product')}}" class="@yield('nav-product','')">Categories</a></li>-->
-                                <li class="dropdown"><a href="{{url('product')}}">Categorie<i class="fa fa-angle-down"></i></a>
+                                <!-- <li><a href="{{url('/products')}}" class="@yield('nav-product','')">Categories</a></li>-->
+                                <li class="dropdown"><a href="{{url('products')}}">Categorie<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                          @foreach ( $categorie as $row )
-                                        <li><a href='{{url("/product?categorie=$row->id")}}'>{{$row->name}}</a></li>
+                                        <li><a href='{{url("/products?categorie=$row->id")}}'>{{$row->name}}</a></li>
                                         @endforeach
                                     </ul>
                                 </li> 

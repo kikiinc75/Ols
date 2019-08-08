@@ -23,12 +23,13 @@ class CartController extends Controller
         if (Auth::check()) {
             $cart = Cart::where('user_id', Auth::id())->orderBy('id', 'desc')->get();
             foreach ($cart as $data) {
-                $array[] = array("id" => $data->id, "product" => $data->product->name, "varian" => $data->product->varian, "qty" => $data->qty);
+                $array[] = array("id" => $data->id, "product" => $data->product->name, "varian" => $data->product->varian, "qty" => $data->qty, "image" => $data->product->image);
             }
         } else {
             if (Session::has('cart')) {
+                // $array[] = Session::get('cart');
                 foreach (Session('cart') as $cart) {
-                    $array[] = array("id" => $cart->id, "product" => $cart->name, "varian" => $cart->varian, "qty" => $cart->qty);
+                    $array[] = array("id" => $cart->id, "product" => $cart->name, "varian" => $cart->varian, "qty" => $cart->qty, "image" => $cart->image);
                 }
             }
         }

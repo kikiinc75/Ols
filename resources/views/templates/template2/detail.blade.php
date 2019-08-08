@@ -155,19 +155,19 @@
                             <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                    <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
                                     </div>
                                     <div class="item">
-                                    <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
                                     </div>
                                     <div class="item">
-                                    <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
+                                    <a href=""><img src="{{url('')}}/product/{{$detail->image}}" alt=""></a>
                                     </div>
                                     
                                 </div>
@@ -186,13 +186,11 @@
                         <div class="product-information"><!--/product-information-->
                             <img src="images/product-details/new.jpg" class="newarrival" alt="" />
                             <h2>{{$detail->name}}</h2>
-                            <p><b>Price :</b>{{$detail->price}}</p>
+                            <p><b>Price :</b>Rp.{{number_format($detail->price)}}</p>
                             <p><b>Stock:</b>{{$detail->stock}}</p>
                             <p><b>Varian:</b>{{$detail->varian}}</p>
                             <img src="images/product-details/rating.png" alt="" />
                             <span>
-                                <label>Quantity:</label>
-                                <input type="text" value="3" />
                                 <button type="button" class="btn btn-fefault cart">
                                 <i class="fa fa-shopping-cart"></i>
                                     Add to cart

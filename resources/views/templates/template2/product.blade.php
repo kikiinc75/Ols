@@ -158,14 +158,14 @@
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
-                                    <img src="{{asset('templates/template2/images/shop/product12.jpg')}}" alt="" />
+                                    <img src="{{url('')}}/product/{{$row->image}}" alt="" />
                                     <h2>{{$row->name}}</h2>
                                     <p>{{$row->varian}}</p>
-                                    <h4>Price :{{$row->price}}</h4>
-                                    <h4>Stock :{{$row->stock}}</h4>
+                                    <h4>Price : Rp.{{number_format($row->price)}}</h4>
+                                    <h4>Stock : {{$row->stock}}</h4>
                                     <button data-id="{{$row->id}}" @guest data-user_id=null @else data-user_id={{Auth::id()}} @endguest  class="btn btn-default add-to-cart add-product">
                                         <i class="fa fa-shopping-cart"></i>Add to cart</button>
-                                        <a href='{{url("product")}}/{{$row->id}}' class="btn btn-default add-to-cart">
+                                        <a href='{{url("products")}}/{{$row->id}}' class="btn btn-default add-to-cart">
                                         <i></i>Detail</a>
                                 </div>
                                 {{-- <div class="product-overlay">

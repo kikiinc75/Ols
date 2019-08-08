@@ -18,7 +18,7 @@ class CreateCartTable extends Migration
             $table->BigInteger('user_id')->unsigned()->nullable();
             $table->BigInteger('product_id')->unsigned();
             $table->integer('qty')->nullable();
-            $table->integer("price");
+            $table->integer("price")->nullable();
             $table->string("image")->nullable();
             $table->timestamps();
         });

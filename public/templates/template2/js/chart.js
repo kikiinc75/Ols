@@ -4,7 +4,7 @@ function getIndex() {
         Object.keys(data).forEach(dt => {
             $(`<div class="itemRow">
                 <div class="itemLeft">
-                    <img src="" alt="none" class="cartImage">
+                    <img src="product/${data[dt].image}" alt="none" class="cartImage">
                 </div>
                 <div class="itemRight">
                     ${data[dt].product} - ${data[dt].varian}
